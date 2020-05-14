@@ -1,0 +1,161 @@
+/*Entête*/
+
+header{
+	background-image:url("../img/page3/bg-page3.jpeg");
+	height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0% 20% 0% 20%;
+	text-align:center;
+	color: white;
+}
+
+header h1{
+	font-size: 2.5em;
+	margin-top: 0%;
+	text-transform: uppercase;
+	padding-top:25%;
+}
+
+span {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+header p{
+	font-size:1.3em;
+}
+
+.content3{
+	font-size: 1em;
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+	display: block;
+}
+
+
+/*Partie 1*/
+
+.p3-h2fond1{
+	font-size: 1.5em;
+	margin: 0;
+	padding: 6% 0% 5% 0%;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.p3-section1{
+	display:flex;
+	flex-direction:row-reverse;
+	background-color: #f8f8f8;
+	padding-bottom: 10%;
+}
+
+.p3-first0{
+	background-image:url('../img/page3/ong.png');
+	background-size: contain;
+	background-position: center;
+	width: 55%;
+	background-repeat: no-repeat;
+	margin-right: 0%;
+}
+
+.p3-first1{
+	padding: 0% 1% 1% 5%;
+	width:45%;
+	text-align: justify;
+}
+
+
+/*Partie 2*/
+
+.p3-h2fond2{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: black;
+	color: white;
+	margin:0;
+	padding: 7% 0 7% 0;
+}
+
+.p3-section2{
+	display:flex;
+	flex-direction:row;
+	background-color: black;
+	color: white;
+	padding-bottom: 10%;
+}
+
+.p3-second0{
+	background-image:url('../img/page3/gif.gif');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:50%;
+	transition: all 0.6s;
+}
+
+.p3-second1{
+	padding: 0 3% 0% 0%;
+	width:20%;
+}
+
+.p3-second2{
+	padding: 0 5% 0% 0%;
+	width:20%;
+}
+
+.p3-overlay1{
+	opacity:0;
+}
+
+.p3-second0:hover .p3-overlay1{
+	opacity:1;
+}
+
+
+/*Partie 3*/
+
+.p3-section3{
+	display:flex;
+	flex-direction:row-reverse;
+	background-color: #f8f8f8;
+	padding: 10% 5% 10% 5%;
+}
+
+.p3-third0{
+	width: 55%;
+	margin-left: 10%;
+	border: 2px solid black;
+}
+
+.p3-third0 img{
+	position: absolute;
+	max-height: 200px;
+	max-width: 400px;
+	padding-left: 3%;
+	animation-name: move;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	transition: 5s ease-in-out;
+}
+
+.p3-third0 img:hover{
+	margin-left: 650px;
+}
+
+@keyframes move {
+  0% {margin-top: 10px;}
+  50% {margin-top: 0px;}
+  100% {margin-top: -70px;}
+}
+
+.p3-third1{
+	padding-left: 12%;
+	width:45%;
+	text-align: justify;
+}

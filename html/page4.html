@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Les espèces en voie de disparition</title>
+		<link rel="icon" type="image/png" href="../img/page2/logo1.png"/>
+		<link rel="stylesheet" type="text/css" href="../css/core.css">
+		<link rel="stylesheet" type="text/css" href="../css/page4.css">
+		<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+	</head>
+	<body>
+
+		<nav>
+			<div class="menu">
+				<a href="../index.html" class="submenu">Acceuil</a>
+				<a href="page2.html" class="submenu">Les Espèces</a>
+				<a href="page3.html" class="submenu">Plan d'action</a>
+				<a href="page4.html" class="submenu">Contact</a>
+				<div class="audioplayer"> 
+					<audio loop autoplay id="player" src="../audio/audio.mp3"></audio>
+					<button class="buttonplayer" onclick="document.getElementById('player').play()"><img src="../img/play.png" alt="playicon"></button> 
+					<button class="buttonplayer" onclick="document.getElementById('player').pause()"><img src="../img/pause.png" alt="playicon"></button> 
+				</div>
+			</div>
+		</nav>
+		
+		<header>
+			<h1><span>Contact</span></h1>
+			<p><a href="https://www.youtube.com/watch?v=VF9_dCo6JT4&list=RDYKdXVnaHfo8&index=11" target="_blank"><span>Source Audio.</span></a></p>
+		</header>
+		
+		<div id="form">
+			<form action="/fiden_ne_maitrise_pas.php">
+				<label for="lname">Noms</label>
+				<input type="text" id="lname" name="lastname" placeholder="Votre noms..">
+				
+				<label for="fname">Prénom</label>
+				<input type="text" id="fname" name="firstname" placeholder="Votre prénom..">
+
+				<label for="email">Email</label>
+				<input type="email" id="email" placeholder="exemple_html@gmail.com" required>
+
+				<label for="country">Pays</label>
+				<select id="country" name="Pays">
+						<option value="">Pays...</option>
+						<option value="France">France</option>
+						<option value="Vénus">Vénus</option>
+						<option value="Mercure">Mercure</option>
+						<option value="Mars">Mars</option>
+						<option value="Terre">Terre</option>
+						<option value="Jupiter">Jupiter</option>
+						<option value="Saturne">Saturne</option>
+						<option value="Uranus">Uranus</option>
+						<option value="Neptune">Neptune</option>
+				</select>
+
+				<label for="subject">Avis</label>
+				<textarea id="subject" name="subject" placeholder="Exprimer votre point de vue.." style="height:200px"></textarea>
+
+				<input type="submit" value="Soumettre">
+			</form>
+		</div>		
+	
+		<footer>
+			<div id="footer">
+				<div class="foo1">
+					<h3>À propos</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+					in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<div class="logo">
+						<a href="https://plus.google.com/+WWF" target="_blank"><img src="../img/google.png" alt="google+"/></a>
+						<a href="https://twitter.com/SeaShepherdFran" target="_blank"><img src="../img/twitter.png" alt="twitter"/></a>
+						<a href="https://www.facebook.com/greenpeacefrance/" target="_blank"><img src="../img/facebook.png" alt="facebook"/></a>
+					</div>
+				</div>
+				<div class="foo2">
+					<h3>Contact</h3>
+					<p>Adresse:<br>3<sup>ème</sup> planète du Système Solaire, 3000 Voie Lactée</p>
+					<p>Téléphone:<br>+3 14 15 92 65</p>
+					<p>Email:<br>Webacadémie_HAN@html.com</p>
+				</div>
+				<div class="foo3">
+					<h3>Sources diverses</h3>
+					<p><a href="https://www.wwf.fr/" target="_blank">Fonds mondial pour la nature</a></p>
+					<p><a href="https://en.wikipedia.org/wiki/Endangered_species" target="_blank">Wikipédia (Anglais)</a></p>
+					<p><a href="https://codepen.io/melnik909/pen/QModrM" target="_blank">Animation du gallerie</a></p>
+					<p><a href="https://www.pexels.com/" target="_blank">Photos libres de droits</a></p>
+					<p><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+				</div>
+			</div>
+			<p class="copyright">Copyright &copy; 2019 Tous les droits sont réservés | Web@cadémie par HAN Fiden</p>
+		</footer>
+		
+	</body>
+</html>

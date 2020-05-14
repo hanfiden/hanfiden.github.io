@@ -1,0 +1,163 @@
+/*Entête*/
+
+header{
+	background-image:url("../img/image2.jpg");
+	height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 0% 20% 0% 20%;
+	text-align:center;
+	color: white;
+}
+
+header h1{
+	font-size: 2.5em;
+	margin-top: 0%;
+	text-transform: uppercase;
+	padding-top:25%;
+}
+
+span {
+	background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+header p{
+	font-size:1.3em;
+}
+
+.content{
+	font-size: 1em;
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+	display: block;
+}
+
+/*Partie 1*/
+
+.h2fond1{
+	font-size: 1.5em;
+	margin: 6% 0% 4% 0%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.section1{
+	display:flex;
+	flex-direction:row;
+}
+
+
+.first0{
+	background-image:url('../img/image3.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:50%;
+	transition: all 0.6s;
+}
+
+.first0:hover{
+	transform: scale(1.1);
+	
+}
+
+.first1{
+	padding: 0 3% 0% 1%;
+	width:20%;
+}
+
+.first2{
+	padding: 0 3% 0% 0%;
+	width:20%;
+}
+
+.overlay1{
+	opacity:0;
+}
+
+.first0:hover .overlay1{
+	opacity:1;
+}
+
+
+/*Partie 2*/
+
+.h2fond2{
+	font-size: 1.5em;
+	margin: 8% 0% 0% 0%;
+	padding: 6% 0% 5% 0%;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+
+.section2{
+	display:flex;
+	flex-direction:row-reverse;
+	background-color: #f0f0f0;
+	padding-bottom: 10%;
+}
+
+.second0{
+	background-image:url('../img/image1.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 65%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-right: 0%;
+}
+
+.second1{
+	padding: 0% 1% 1% 5%;
+	width:35%;
+	text-align: justify;
+}
+
+.overlay2{
+	opacity:0;
+}
+
+.second0:hover .overlay2{
+	opacity:1;
+}
+
+
+/*Partie 3*/
+
+.citation {
+	text-align: center;
+	color: #808080;
+	margin: 0 20% 13% 20%;
+	line-height: 1.7;
+}
+
+.section3 {
+	padding: 10% 5% 55% 5%;
+	line-height: 0px;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	overflow: hidden;
+}
+
+
+.section3 img {
+	max-width: 100%;
+	transition: all 0.5s;	
+	filter: grayscale(0) blur(0);
+
+}
+
+
+.column:hover img {
+	transform: scale(1.2);
+	filter: grayscale(100%) blur(3px);
+}
+

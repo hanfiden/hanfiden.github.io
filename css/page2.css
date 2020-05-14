@@ -1,0 +1,175 @@
+/*Entête*/
+
+header{
+	background-image:url("../img/page2/wallpaper.jpg");
+	height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0% 20% 0% 20%;
+	text-align:center;
+	color: white;
+	background-attachment: fixed;
+}
+
+header h1{
+	font-size: 2.5em;
+	margin-top: 0%;
+	text-transform: uppercase;
+	padding-top:25%;
+}
+
+span {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+header p{
+	font-size:1.3em;
+}
+
+/*Gallery*/
+
+#gallery {
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 9% 0 9% 0;
+	background-image:url("../img/page2/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.row img {
+	max-height: 150px;
+	max-width: 150px;
+	opacity: 0.6;	
+}
+
+.row img:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+.photo {
+	width: 40%;
+}
+
+.description {
+	width: 50%;
+	margin: -7% 5% 0 10%
+}
+
+.open-popup {
+	margin: 0 3% 3% 3%;
+}
+
+.popup{
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#popup-elephant:target, #popup-orangutan:target, #popup-leopard:target, #popup-rhino:target, 
+#popup-tigre:target, #popup-tortue:target, #popup-vaquita:target {
+  display: flex;
+}
+
+.popup:before{
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  animation: open-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) .65s both;
+}
+
+.popup:after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #f0f0f0;
+  animation: line-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+}
+
+@keyframes line-animation{
+
+  0%{
+    width: 0;
+    opacity: 1;
+  }
+
+  99%{
+    width: 100%;
+    opacity: 1;
+  }
+
+  100%{
+    width: 100%;
+    opacity: 0;
+  }  
+}
+
+@keyframes open-animation{
+
+  0%{
+    height: 0;
+    top: 50%;
+  }
+
+  100%{
+    height: 100vh;
+    top: 0;
+  }
+}
+
+.popup__block{
+  padding-top: 7%;
+  animation: fade .5s ease-out 1.3s both;
+  overflow-y: hidden;
+  display: flex;
+  text-align: justify;
+}
+
+.popup__title{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.popup__close{
+  width: 3.2rem;
+  height: 3.2rem;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  text-decoration:none;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+@keyframes fade{
+
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
